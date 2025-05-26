@@ -78,6 +78,7 @@
         }
 
          .leftSection  .btn{
+            text-decoration: none;
             padding: 12px;
             background: #1e2167;
             color: white;
@@ -108,7 +109,7 @@
         .secondSection{
             max-width: 80vw;
             margin: auto;
-            height: 80vh;
+            height: 110vh;
         }
 
         .secondSection h1 {
@@ -119,16 +120,42 @@
              background: white;
              width: 77vw;
              height: 2px;
-             margin: 56px 0;
+             margin: 66px 0px;
              display: flex;
         }
-
+        
         .secondSection .vertical{
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 120px;
+            margin: 0 155px;
         }
+
+        .Projects{
+            max-width: 80vw;
+            margin: auto;
+            height: 130vh;
+        }
+
+        .Projects h1 {
+            font-size: 1.9rem;
+        }
+
+        .Projects .box{
+             background: white;
+             width: 77vw;
+             height: 2px;
+             margin: 56px 0;
+             display: flex;
+        }
+
+        .Projects .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 220px;
+        }
+
 
         .image-top{
             width: 23px;
@@ -148,7 +175,7 @@
             top: 86px;
             color: gray;
             width: 150px;
-            font-size: 9px;
+            font-size: 12px;
 
         }
 
@@ -158,7 +185,7 @@
         .footer{
             display: flex;
             padding: 23px 122px;
-            justify-content: space-evenly
+            justify-content: space-between;
         }
 
         .footer ul {
@@ -175,6 +202,11 @@
             padding: 12px 12px;
         }
 
+        a {
+            color: #8ac1e9; /* your preferred color */
+            text-decoration: none; /* optional: remove underline */
+        }
+
     </style>
 </head>
 <body>
@@ -184,17 +216,17 @@
             <div class="right">
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact me</a></li>
+                    <li><a href="#firstSection">About</a></li>
+                    <li><a href="#experience">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                   <li><a href="mailto:anmol7696ss@gmail.com">Contact me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     
     <main>
-        <section class="firstSection">
+        <section class="firstSection" id="firstSection">
             <div class="leftSection">
                Hi, My name is <span class="purple">Anmolpreet </span>
                <div>
@@ -202,8 +234,8 @@
                </div>
                <span id="element"></span>
                <div class="buttons">
-                 <button class="btn">Download Resume</div>
-                  <button class="btn">Visit Github</div>
+                 <a href="https://umanitoba-my.sharepoint.com/:b:/r/personal/anmolpr1_myumanitoba_ca/Documents/MY_RESUME.pdf?csf=1&web=1&e=UDckJa" class="btn" target="_blank">Download Resume</a>
+                  <a href="https://github.com/anmol-7696" class="btn" target="_blank">Visit Github</a>
                </div>
             </div>
             <div class="rightSection">
@@ -211,49 +243,93 @@
             </div>
         </section>
 <hr>
-        <section class="secondSection">
+        <section class="secondSection" id="experience">
             <span class="text-grey">What I have done so far</span>
             <h1>Work Experience</h1>
             <div class="box">
                <div class="vertical">
                    <img class="image-top" src="developer.png" alt="">
                    <div class="vertical-title">
-                       HTML Developer (2010-2012)
+                       Cash Accounting Supervisor (Loblaws Company Limited)
                    </div>
                    <div class="vertical-desc">
-                         lorem ispum 
+                        • Supervised cash accounting operations, ensuring accuracy and compliance with financial policies. <br> <br>
+                        • Oversaw daily cash reconciliation processes, identifying discrepancies and implementing corrective measures to
+                        maintain accurate financial records.
                    </div>
                </div>
                     <div class="vertical">
                    <img class="image-top" src="developer.png" alt="">
                    <div class="vertical-title">
-                       HTML Developer (2010-2012)
+                       Mathematics Teaching Assistant (University of Manitoba)
                    </div>
                    <div class="vertical-desc">
-                         lorem ispum 
+                        • Responsible for evaluating and grading assignments, quizzes, and exams with accuracy and consistency for an
+                          undergraduate mathematics course.<br> <br>
+                        • Collaborating with the course instructor to ensure fair grading practices and timely submission of grades.
                    </div>
                </div>
                     <div class="vertical">
                    <img class="image-top" src="developer.png" alt="">
                    <div class="vertical-title">
-                       HTML Developer (2010-2012)
+                       Undergraduate Research Intern (Ideas Lab)
                    </div>
                    <div class="vertical-desc">
-                         lorem ispum 
+                         • Developed and implemented a scalable distributed optimization algorithm for the placement of EV charging
+                            stations using Graph Neural Networks (GNN) and Bayesian methods, enhancing predictive accuracy and energy
+                            distribution. <br> <br>
+                            • Conducted predictive analysis of EV charging demand through advanced machine learning techniques, improving
+                            decision-making for infrastructure development and reducing range anxiety among users.
+                            
                    </div>
                </div>
-                    <div class="vertical">
-                   <img class="image-top" src="developer.png" alt="">
-                   <div class="vertical-title">
-                       HTML Developer (2010-2012)
-                   </div>
-                   <div class="vertical-desc">
-                         lorem ispum 
-                   </div>
-               </div>
+                   
 
             </div>
         </section>
+
+ <hr>
+        <section class="Projects" id="Projects">
+            <span class="text-grey">What I have built so far</span>
+            <h1>Projects</h1>
+            <div class="box">
+               <div class="vertical">
+                   <img class="image-top" src="developer.png" alt="">
+                   <div class="vertical-title">
+                      Event-Driven-Air-Control-Simulation(C++)
+                   </div>
+                   <div class="vertical-desc">
+                         • Developed an event-driven airport simulation to manage aircraft landings and takeoffs, ensuring efficient runway
+allocation and adherence to wake turbulence constraints.
+  <br> <br>
+
+• Implemented a time-based scheduling system that accounted for aircraft weight categories, final approach
+durations, and necessary clearance times to maintain safe operations.
+  <br> <br>
+
+• Utilized data structures like linked lists to efficiently process and manage event handling for runway availability and
+aircraft sequencing.
+                   </div>
+               </div>
+                    <div class="vertical">
+                   <img class="image-top" src="developer.png" alt="">
+                   <div class="vertical-title">
+                       AI-Powered-Research-Paper-Summarizer(Python, Flask, React, SQl, Docker)
+                   </div>
+                   <div class="vertical-desc">
+                         • Developing a Python app that takes academic papers (PDFs) and summarizes them using NLP techniques.
+                         <br> <br>
+• Implementing Natural Language Processing (NLP) techniques, including tokenization, sentence segmentation, and
+summarization algorithms to generate concise summaries of complex academic content.
+  <br> <br>
+• Enhanced the tool’s efficiency with automated PDF downloading, text cleaning, and summarization, making it a
+valuable resource for researchers and students.
+                   </div>
+               
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -261,30 +337,16 @@
             <div class="footer-first">
                 <h3>Anmol's Developer Portfolio</h3>
             </div>
-            <div class="footer-second">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Services</li>
-                    </ul>
-            </div>
-            <div class="footer-third">
-                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Services</li>
-                    </ul>
-            </div>
-            <div class="footer-fourth">
-                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Services</li>
-                    </ul>
-            </div>
+            <ul class="footer-list">
+                <li>Email: <a href="mailto:anmol7696ss@gmail.com">anmol7696ss@gmail.com</a></li>
+                <li>Phone: <a href="tel:+12049524978">+1 (204) 952-4978</a></li>
+                <li>
+                <a href="https://www.linkedin.com/in/anmol-preet/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/anmol-7696" target="_blank">GitHub</a> |
+                <a href="resume.pdf" target="_blank">Resume</a>
+                </li>
+                <li><a href="#firstSection">Back to top </a></li>
+            </ul>
         </div>
         <div class="footer-rights">
             Copyright &#169; www.harrysportfolio.com | All rights reserved
